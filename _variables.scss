@@ -1,0 +1,138 @@
+$root-font-size: 10px; // 16px = 1.6rem
+
+$navbar-height: 120px;
+
+$white: #fff;
+$black: #000;
+
+// color palette
+$color-primary: #293337;
+$color-secondary: #777777;
+$color-tertiary: #b0b0b0;
+$color-quaternary: #e4e4e4;
+$color-quinary: #f9f8f8;
+
+$color-darkest: $color-primary; // darkest color in palette
+$color-lightest: $color-quinary; // lightest color in palette
+
+// font styles
+$base-font-sans-serif: 'Poppins', sans-serif;
+$base-font-sans-serif2: $base-font-sans-serif;
+$base-font-serif: 'Spectral SC', serif;
+$base-font-serif2: $base-font-serif;
+
+// heading sizes
+$h1-size: 3.6rem;
+$h2-size: 3rem;
+$h3-size: 2.4rem;
+$h4-size: 2.1rem;
+$h5-size: 2.4rem;
+$h6-size: 1.8rem;
+
+// base font styles
+$base-font-size: 1.6rem;
+$base-font-color: $color-secondary;
+$base-font-family: $base-font-sans-serif;
+$base-font-weight: 400;
+$base-font-letter-spacing: 0;
+$base-line-height: 1.88;
+
+// link stlying
+$link-color: $base-font-color;
+$link-hover-color: $base-font-color;
+$link-hover-decoration: underline;
+$link-bottom-border: 1px solid;
+
+// primary button
+$button-bg: $color-primary;
+$button-bg-hover: #171b1d;
+$button-font-color: $white;
+$button-font: $base-font-sans-serif;
+$button-weight: 600;
+$button-font-size: 1.4rem;
+$button-letter-spacing: 2px;
+$button-padding: 22px 30px 21px;
+$button-border: 2px solid $button-bg;
+$button-border-hover-color: $button-bg-hover;
+
+// secondary button
+$second-button-bg: transparent;
+$second-button-bg-hover: $color-quaternary;
+$second-button-font-color: $color-primary;
+$second-button-font: $button-font;
+$second-button-weight: $button-weight;
+$second-button-font-size: $button-font-size;
+$second-button-font-letter-spacing: $button-letter-spacing;
+$second-button-padding: $button-padding;
+$second-button-border: 2px solid $second-button-bg-hover;
+$second-button-border-hover-color: $second-button-bg-hover;
+
+// accordion
+$accordion-icon-closed: "\eb00"; // arrow down="\eb00", plus="\ed7c"
+$accordion-icon-open: "\eb03"; // arrow up="\eb03", minus="\ed7d"
+$accordion-icon-size: 14px;
+$accordion-bar-closed-bg: $color-lightest;
+$accordion-bar-open-bg: $color-darkest;
+$accordion-bar-closed-font-color: $accordion-bar-open-bg;
+$accordion-bar-open-font-color: $white;
+$accordion-bar-font-size: 2.1rem;
+$accordion-bar-font-weight: 600;
+$accordion-bar-letter-spacing: 0;
+$accordion-bar-text-transform: none;
+$accordion-bar-font-family: $base-font-sans-serif;
+$accordion-bar-padding: 21px 15% 21px 4%;
+$accordion-tab-border: none;
+$accordion-content-bg-color: $color-lightest;
+
+// tab strip
+$tabstrip-unselected-bg: $color-primary;
+$tabstrip-selected-bg: $white;
+$tabstrip-unselected-font-color: $white;
+$tabstrip-selected-font-color: $color-primary;
+$tabstrip-selected-top-border-color: $tabstrip-unselected-bg;
+$tabstrip-tabs-font-family: $base-font-sans-serif;
+$tabstrip-tabs-font-size: 1.6rem;
+$tabstrip-tabs-font-weight: 500;
+$tabstrip-tabs-font-selected-weight: $tabstrip-tabs-font-weight;
+$tabstrip-tabs-letter-spacing: 0;
+$tabstrip-tabs-text-transform: none;
+$tabstrip-padding: 11px;
+
+// top nav
+$nav-top-default-font-color: #4a4a4a;
+$nav-top-hover-font-color: $color-secondary;
+$nav-top-selected-font-color: $nav-top-hover-font-color;
+$nav-top-font-family: $base-font-sans-serif;
+$nav-top-font-size: $base-font-size;
+$nav-top-font-weight: 500;
+$nav-top-font-text-transform: none;
+$nav-top-font-letter-spacing: 0;
+$nav-top-li-top-bott-padding: 0;
+$nav-top-li-left-right-padding: 23px;
+$nav-top-li-padding: $nav-top-li-top-bott-padding $nav-top-li-left-right-padding;
+
+// subnav -- see mixin for subnav font styling
+$subnav-min-width: 287px;
+$subnav-top-bott-padding: 30px;
+$subnav-left-right-padding: 0;
+$subnav-padding: $subnav-top-bott-padding $subnav-left-right-padding calc(#{$subnav-top-bott-padding} - 0px);
+$nav-sub-default-font-color: $white;
+$nav-sub-hover-font-color: $white;
+$nav-sub-selected-font-color: $nav-sub-hover-font-color;
+$nav-sub-font-size: 1.6rem;
+$nav-sub-font-weight: 500;
+$nav-sub-font-top-bott-padding: 10px;
+$nav-sub-font-left-right-padding: 40px;
+$nav-sub-font-padding: $nav-sub-font-top-bott-padding $nav-sub-font-left-right-padding;
+$subnav-top-position: 100%;
+$subnav-left-position: calc((#{$nav-sub-font-left-right-padding} - #{$nav-top-li-left-right-padding}) * -1);
+$subnav-translateX: 0;
+$nav-sub-font-text-align: left;
+$nav-sub-font-hover-decoration: underline;
+$nav-sub-font-selected-decoration: underline;
+$nav-sub-font-hover-bgcolor: transparent;
+$nav-sub-font-selected-bgcolor: $nav-sub-font-hover-bgcolor;
+$nav-sub-font-letter-spacing: 0;
+$nav-sub-font-text-transform: none;
+$nav-sub-font-family: $base-font-sans-serif;
+$nav-sub-default-bg-color: rgba(24, 47, 85, 0.9);
